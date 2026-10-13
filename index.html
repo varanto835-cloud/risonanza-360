@@ -7,7 +7,7 @@
 <title>La risonanza magnetica · video 360°</title>
 <link rel="icon" href="./assets/brand/icona.svg" type="image/svg+xml">
 <style>:root{--night:#0f1a2e;--aqua:#00d4aa;--blue:#0066a5;--font-title:"Montserrat","Segoe UI",Arial,sans-serif;--font:"Open Sans","Segoe UI",Arial,sans-serif}html,body{color:#fff;height:100%;font-family:var(--font);background:#000;margin:0;overflow:hidden}#stage{position:fixed;inset:0}#stage canvas{touch-action:none;width:100%;height:100%;display:block}body.stereo #stage:after{content:"";background:#000000b3;width:2px;margin-left:-1px;position:absolute;top:0;bottom:0;left:50%}.gate{z-index:5;text-align:center;cursor:pointer;width:100%;font:inherit;color:#fff;background:radial-gradient(circle at 50% 40%, #13325a 0%, var(--night) 70%);border:0;place-items:center;padding:24px;display:grid;position:fixed;inset:0}.gate[hidden]{display:none}.gate-inner{justify-items:center;gap:14px;max-width:560px;display:grid}.gate-inner img{background:#fff;border-radius:12px;width:auto;height:56px;padding:6px 12px}.gate h1{font-family:var(--font-title);margin:0;font-size:clamp(1.5rem,6vw,2.3rem);font-weight:800;line-height:1.1}.gate p{color:#cfe3f1;margin:0;font-size:1.02rem;line-height:1.5}.ring{border:4px solid var(--aqua);width:84px;height:84px;font-family:var(--font-title);color:var(--aqua);border-radius:50%;place-items:center;font-weight:800;display:grid}.modes{flex-wrap:wrap;justify-content:center;gap:10px;margin-top:6px;display:flex}.btn{font:inherit;cursor:pointer;background:var(--blue);color:#fff;border:0;border-radius:12px;padding:12px 18px;font-size:15px;font-weight:700}.btn.quiet{background:#ffffff1f}.hud{z-index:4;padding:calc(env(safe-area-inset-top,0px) + 12px) 12px 12px;pointer-events:none;justify-content:center;gap:10px;display:none;position:fixed;top:0;left:0;right:0}.hud .btn{pointer-events:auto;background:#0f1a2edb;border-radius:999px;padding:9px 14px;font-size:14px}body.hud-on .hud{display:flex}.rotate{z-index:6;text-align:center;background:#0f1a2ef2;place-items:center;padding:24px;font-size:1.2rem;display:none;position:fixed;inset:0}@media (orientation:portrait){body.stereo .rotate{display:grid}}.msg{left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 18px);z-index:4;text-align:center;opacity:0;pointer-events:none;background:#0f1a2ee6;border-radius:12px;max-width:calc(100vw - 32px);padding:10px 16px;font-size:14px;transition:opacity .25s;position:fixed;transform:translate(-50%)}.msg.on{opacity:1}</style>
-  <script type="module" crossorigin src="./assets/video-VKjBUcpe.js"></script>
+  <script type="module" crossorigin src="./assets/video-BA-BDYUQ.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/three.module-CHRoL9dW.js">
 </head>
 <body data-src="video/risonanza_360_3d.mp4">
@@ -25,7 +25,9 @@
   </span>
 </button>
 <div class="hud">
+  <button class="btn" id="btnLentiMeno" type="button" aria-label="Immagini più vicine">−</button>
   <button class="btn" id="btnRecenter" type="button">Ricentra</button>
+  <button class="btn" id="btnLentiPiu" type="button" aria-label="Immagini più lontane">+</button>
   <button class="btn" id="btnExit" type="button">Esci</button>
 </div>
 <div class="rotate">Ruota il telefono in orizzontale e inseriscilo nel visore.</div>
